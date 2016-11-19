@@ -18,6 +18,7 @@
 		0A8F1A1E1DDF377B00501762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F1A1D1DDF377B00501762 /* Assets.xcassets */; };
 		0A8F1A211DDF377B00501762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F1A1F1DDF377B00501762 /* LaunchScreen.storyboard */; };
 		0A8F1A291DDF37DC00501762 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F1A281DDF37DC00501762 /* GoogleService-Info.plist */; };
+		0ADACF541DDF5FF10036D4B8 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADACF531DDF5FF10036D4B8 /* PokeAnnotation.swift */; };
 		275AAD816BF2A12AEBFCBCD7 /* Pods_Pokefinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9684F79FBDF905C128D684 /* Pods_Pokefinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		0A8F1A201DDF377B00501762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8F1A221DDF377B00501762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8F1A281DDF37DC00501762 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0ADACF531DDF5FF10036D4B8 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		41391C85A992A99FD3DD20CC /* Pods-Pokefinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokefinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokefinder/Pods-Pokefinder.release.xcconfig"; sourceTree = "<group>"; };
 		68B80EA27B586FB077917EBB /* Pods-Pokefinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokefinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokefinder/Pods-Pokefinder.debug.xcconfig"; sourceTree = "<group>"; };
 		FE9684F79FBDF905C128D684 /* Pods_Pokefinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokefinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,17 +124,34 @@
 		0A8F1A151DDF377B00501762 /* Pokefinder */ = {
 			isa = PBXGroup;
 			children = (
+				0ADACF511DDF5F910036D4B8 /* Model */,
+				0ADACF521DDF5F970036D4B8 /* Controller */,
 				0A4B49141DDF3A300089900F /* GeoFire */,
-				0A8F1A281DDF37DC00501762 /* GoogleService-Info.plist */,
 				0A8F1A161DDF377B00501762 /* AppDelegate.swift */,
-				0A8F1A181DDF377B00501762 /* ViewController.swift */,
-				0A8F1A1A1DDF377B00501762 /* Main.storyboard */,
-				0A8F1A1D1DDF377B00501762 /* Assets.xcassets */,
-				0A8F1A1F1DDF377B00501762 /* LaunchScreen.storyboard */,
-				0A8F1A221DDF377B00501762 /* Info.plist */,
 				0A4B492B1DDF3AF10089900F /* PokeFinder-Bridging-Header.h */,
+				0A8F1A1D1DDF377B00501762 /* Assets.xcassets */,
+				0A8F1A1A1DDF377B00501762 /* Main.storyboard */,
+				0A8F1A1F1DDF377B00501762 /* LaunchScreen.storyboard */,
+				0A8F1A281DDF37DC00501762 /* GoogleService-Info.plist */,
+				0A8F1A221DDF377B00501762 /* Info.plist */,
 			);
 			path = Pokefinder;
+			sourceTree = "<group>";
+		};
+		0ADACF511DDF5F910036D4B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0ADACF531DDF5FF10036D4B8 /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0ADACF521DDF5F970036D4B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A8F1A181DDF377B00501762 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		44AD0BA4E813349D163707A1 /* Pods */ = {
@@ -277,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4B49271DDF3A300089900F /* GFBase32Utils.m in Sources */,
+				0ADACF541DDF5FF10036D4B8 /* PokeAnnotation.swift in Sources */,
 				0A8F1A191DDF377B00501762 /* ViewController.swift in Sources */,
 				0A4B49281DDF3A300089900F /* GFGeoHash.m in Sources */,
 				0A8F1A171DDF377B00501762 /* AppDelegate.swift in Sources */,
